@@ -14,7 +14,28 @@
 <body>
    <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
-   <h1><a href="/messages">@yield('title')</a></h1>
+       <!--NAVBAR-->
+       <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+         <div class="container-fluid">
+             <a href="/messages"><img class="img-responsive" src="img/favicon.png" data-bs-hover-animate="pulse"
+                     alt="logo"></a>
+             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+
+             <div class="navbar-nav ms-auto">
+                 <a href="/messages" class="nav-link ">HOME</a>
+                 <a href="/movies" class="nav-link ">MOVIES</a>
+
+             </div>
+
+     </nav>
+     <!--CAROUSEL-->
+     <header>
+         <div class="carousel-inner">
+             <img id="header-img" src="{{ 'img/header_tugce.png' }}" alt="this is a banner" class="d-block w-100">
+         </div>
+     </header>
    <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
    @yield('content')
