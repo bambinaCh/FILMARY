@@ -7,6 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+   <link href="{{ asset('img/favicon.ico')}}" rel="icon">
    <script src="{{ asset('js/app.js') }}" defer></script>
    <title>@yield('title')</title>
 </head>
@@ -44,7 +45,7 @@
             LISTED MOVIES
          </div>
 
-         <img class="img" src="img/white_chicks.jpg" href="">
+         <a href="/messages"><img class="img" src="img/white_chicks.jpg" ></a>
          <img class="img" src="img/deadpool.jpg">
          <img class="img" src="img/pixels.jpeg">
          <img class="img" src="img/die_legende.jpeg"><br>
