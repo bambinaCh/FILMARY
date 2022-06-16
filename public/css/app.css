@@ -6,9 +6,11 @@
     text-align: center;
     align-items: center;
 }
+
 .navbar img {
     width: 150px;
 }
+
 .navbar a {
     font-size: px;
     color: #E5B7ED;
@@ -20,13 +22,16 @@
     text-decoration: none;
     bottom: 60px;
 }
+
 .navbar a:hover {
     background: rgba(255, 189, 89, 0.6);
     color: #E5B7ED;
 }
+
 .navbar a.active {
     color: #E5B7ED;
 }
+
 .container-fluid {
     padding: 0%;
     margin: 0%;
@@ -36,32 +41,76 @@
 body {
     background-color: #5B6CBF;
 }
-/*HEADER*/
+
+/*HEADER HOMEPAGE*/
 #header-img {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.titles{
-   text-align: center;
-   font-size: 30px;
-   font-weight: 600;
-   color: #FFBD59;
-
+/*CONTENT */
+.titles {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 1rem;
+    color: #FFBD59;
 }
 
+/*HOMEPAGE*/
+.movies {
+    text-align: center;
+    padding: 3rem;
+}
+.img{
+    width: 12rem;
+    height: 16rem;
+    padding: 0.8rem;
+}
+
+form {
+    text-align: center;
+ }
+form input {
+    margin: 0.2rem;
+    background-color: #475CBF;
+}
+::placeholder {
+    color: #E5B7ED;
+    
+}
+
+#button {
+    color: #E5B7ED;
+    font-weight: 700;
+    background-color: #475CBF;
+    margin: 1rem;
+    box-shadow: 1px 2px 2px 1px #2f2f2fa4;
+}
+#button:hover{
+    background-color: #ffbd59a9;
+}
+
+.open-forum{
+    margin-bottom: 3rem;
+}
+
+.posts{
+    text-align: center;
+}
 /*FOOTER*/
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 1000px;
+    
 }
 
 footer img {
     width: 100%;
+ 
 }
 
 footer b {
