@@ -24,26 +24,61 @@
 
          <div class="navbar-nav ms-auto">
             <a href="/messages" class="nav-link">HOME</a>
-            <a href="/resources/views/movies.blade.php" class="nav-link ">MOVIES</a>
+            <a href="/movies" class="nav-link ">MOVIES</a>
          </div>
 
    </nav>
    <!--CAROUSEL-->
    <header>
       <div class="carousel-inner">
-         <img id="header-img" src="{{ 'img/header_tugce.png' }}" alt="this is a banner" class="d-block w-100">
+         <img id="header-img" src="{{ 'img/header_petrini.png' }}" alt="this is a banner" class="d-block w-100">
       </div>
    </header>
    <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
    @yield('content')
    <div class="content">
-      <div class="titles">
-         LISTED MOVIES
-      </div>
+
       <div class="movies">
-         <img>
+         <div class="titles">
+            LISTED MOVIES
+         </div>
+
+         <img class="img" src="img/white_chicks.jpg" href="">
+         <img class="img" src="img/deadpool.jpg">
+         <img class="img" src="img/pixels.jpeg">
+         <img class="img" src="img/die_legende.jpeg"><br>
+         <button id="button" class="btn btn-default" type="submit">More</button>
       </div>
+
+      <div class="open-forum">
+         <div class="titles">
+            OPEN FORUM
+         </div>
+
+         <form action="/create" method="post">
+            <input class="title-input" type="text" name="title" placeholder="Title"><br>
+            <input class="content-input" type="text" name="content" placeholder="Suggest a movie ..."><br>
+            <!-- this blade directive is necessary for all form posts somewhere in between the form tags -->
+            @csrf
+            <button id="button" class="btn btn-default" type="submit">Post</button>
+         </form>
+      </div>
+
+      <div class="posts">
+         <div class="titles">
+            POSTS
+         </div>
+         <div>
+            hihihihi<br>
+            hihihihi<br>
+            hihihihi<br>
+            hihihihi<br>
+            hihihihi<br>
+            hihihihi<br>
+         </div>
+      </div>
+
    </div>
    <!-- hier wird die php Funktion date() aufgerufen mit dem Format-Pattern 'd.m.Y'
     und im html ausgegeben-->
