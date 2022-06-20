@@ -38,49 +38,7 @@
    <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
    @yield('content')
-   <div class="content">
-
-      <div class="movies">
-         <div class="titles">
-            LISTED MOVIES
-         </div>
-
-         <a href="/messages"><img class="img" src="img/white_chicks.jpg" ></a>
-         <img class="img" src="img/deadpool.jpg">
-         <img class="img" src="img/pixels.jpeg">
-         <img class="img" src="img/die_legende.jpeg"><br>
-         <button id="button" class="btn btn-default" type="submit">More</button>
-      </div>
-
-      <div class="open-forum">
-         <div class="titles">
-            OPEN FORUM
-         </div>
-
-         <form action="/create" method="post">
-            <input class="title-input" type="text" name="title" placeholder="Title"><br>
-            <input class="content-input" type="text" name="content" placeholder="Suggest a movie ..."><br>
-            <!-- this blade directive is necessary for all form posts somewhere in between the form tags -->
-            @csrf
-            <button id="button" class="btn btn-default" type="submit">Post</button>
-         </form>
-      </div>
-
-      <div class="posts">
-         <div class="titles">
-            POSTS
-         </div>
-         <div>
-            hihihihi<br>
-            hihihihi<br>
-            hihihihi<br>
-            hihihihi<br>
-            hihihihi<br>
-            hihihihi<br>
-         </div>
-      </div>
-
-   </div>
+   
    <!-- hier wird die php Funktion date() aufgerufen mit dem Format-Pattern 'd.m.Y'
     und im html ausgegeben-->
    <footer>

@@ -37,10 +37,12 @@
     margin: 0%;
 }
 
+
 /* BODY */
 body {
     background-color: #5B6CBF;
 }
+
 
 /*HEADER HOMEPAGE*/
 #header-img {
@@ -63,7 +65,8 @@ body {
     text-align: center;
     padding: 3rem;
 }
-.img{
+
+.img {
     width: 12rem;
     height: 16rem;
     padding: 0.8rem;
@@ -71,14 +74,22 @@ body {
 
 form {
     text-align: center;
- }
+}
+
 form input {
     margin: 0.2rem;
-    background-color: #475CBF;
+    background-color: #475bbf00;
+    width: 40%;
+
+}
+
+title-input::placeholder {
+    color: #FFBD59;
+
 }
 ::placeholder {
     color: #E5B7ED;
-    
+
 }
 
 #button {
@@ -88,29 +99,51 @@ form input {
     margin: 1rem;
     box-shadow: 1px 2px 2px 1px #2f2f2fa4;
 }
-#button:hover{
+
+#button:hover {
     background-color: #ffbd59a9;
 }
 
-.open-forum{
+.open-forum {
     margin-bottom: 3rem;
 }
 
-.posts{
+.posts {
     text-align: center;
+    padding-left: 22%;
+    padding-right: 24%
 }
+
+a {
+    font-size: 20px;
+    list-style-type: none;
+    color: #FFBD59;
+    text-decoration-line: none;
+}
+
+li {
+    color: #E5B7ED;
+    text-align: left;
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+.timestamp {
+    color: #FFBD59;
+}
+
 /*FOOTER*/
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 footer img {
     width: 100%;
- 
+
 }
 
 footer b {
