@@ -11,7 +11,19 @@
        LISTED MOVIES
     </div>
     <div class="movies">
+       <ul>
+          @foreach ($movies as $movie)
+          <li>
+             <b>{{$movie->title}}:</b><br>
+             {{$movie->content}}<br>
+          </li>
+          @endforeach
+       </ul>
+
+       @endsection
+
        <img>
+       </ul>
     </div>
  </div>
 
