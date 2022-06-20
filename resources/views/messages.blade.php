@@ -15,8 +15,19 @@ ts value for section title to "Mini Twitter" (section content is used in message
          <div class="titles">
              LISTED MOVIES
          </div>
+         <a href="/movies"><img class="img" src="img/white_chicks.jpg"></a>
+         <ul>
+             @foreach ($movies as $movie)
+             <li>
+                 <b>
+                    <a href="/movies">{{$movie->title}}</a></b><br>
+                <br>
+             </li>
+             @endforeach
+         </ul>
 
-         <a href="/messages"><img class="img" src="img/white_chicks.jpg"></a>
+
+         <img class="img" src="img/{{$movie->image}}">
          <img class="img" src="img/deadpool.jpg">
          <img class="img" src="img/pixels.jpeg">
          <img class="img" src="img/die_legende.jpeg"><br>
@@ -50,12 +61,12 @@ ts value for section title to "Mini Twitter" (section content is used in message
                          <a href="/message/{{$message->id}}">{{$message->title}}</a>
                      </b><br>
                      {{$message->content}}<br>
-                     <div class="timestamp">{{$message->created_at->diffForHumans()}}</div> 
+                     <div class="timestamp">{{$message->created_at->diffForHumans()}}</div>
                  </li>
                  @endforeach
              </ul>
              @endsection
-           
+
 
          </div>
      </div>

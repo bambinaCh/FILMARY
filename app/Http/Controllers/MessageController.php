@@ -4,13 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Message;
+use App\Models\Movie;
+
 
 class MessageController extends Controller
 {
     public function showAll()
     {
         $messages = Message::all()->sortByDesc('created_at');
-        return view('messages', ['messages' => $messages]);
+        $movies = Movie::all()->sortByDesc('created_at');
+
+        return view('messages', ['messages' => $messages, 'movies' => $movies]);
+        
     }
 
     public function create(Request $request) {
@@ -27,7 +32,8 @@ class MessageController extends Controller
         $message->save();
    
         // at the end we make a redirect to the url /messages
-        return redirect('/messages');        
+        return redirect('/messages');      
+
     }
  
     public function details($id) {
@@ -38,11 +44,13 @@ class MessageController extends Controller
         // and the same ID that web.php took out of the link and
         // "passed it on" to the controller   
         $message = Message::findOrFail($id);
+        $movie = Movie::findOrFail($id);
        
         // we return the view messageDetails.blade.php
         // and we also pass it the Message-Object that we got
         // back from the function findOrFail   
         return view('messageDetails', ['message' => $message]);
+        return view('movieDetails', ['movie' => $movie]);
     }
  
 }
