@@ -140,22 +140,32 @@ a:hover {
 }
 
 /*MOVIES PAGE*/
-.movies-ul {
-    columns: 2;
-    -webkit-columns: 2;
+.listed-movies {
+    text-align: center;
+    padding-right: 1rem;
 }
 
-.movies-li{
+.movies-ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.movies-li {
     text-align: center;
     list-style-type: none;
 }
-.movie-title{
+
+.movie-title {
     font-size: 24px;
     font-weight: 600;
-    padding: 1rem;
     color: #FFBD59;
 }
 
+.img-cover {
+    width: 8rem;
+    height: 10rem;
+}
 
 /*FOOTER*/
 footer {

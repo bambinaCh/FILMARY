@@ -9,12 +9,12 @@
     <div class="titles">
        LISTED MOVIES
     </div>
-    <div class="movies">
+    <div class="listed-movies">
        <ul class="movies-ul">
           @foreach ($movies as $movie)
           <li class="movies-li">
              <b>
-                {{$movie->cover}}</br>
+             <img class="img-cover" src="data:image/jpg;base64,{{ chunk_split(base64_encode($movie->cover))}}"></br>
                 <div class="movie-title">
                    {{$movie->title}}
                 </div>
