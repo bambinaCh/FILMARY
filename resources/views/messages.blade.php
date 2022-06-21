@@ -16,24 +16,11 @@ ts value for section title to "Mini Twitter" (section content is used in message
              LISTED MOVIES
          </div>
          <a href="/movies"><img class="img" src="img/white_chicks.jpg"></a>
-         <ul>
-             @foreach ($movies as $movie)
-             <li>
-                 <b>
-                    <a href="/movies">{{$movie->title}}</a></b><br>
-                <br>
-             </li>
-             @endforeach
-         </ul>
-
-
-         <img class="img" src="img/{{$movie->image}}">
-         <img class="img" src="img/deadpool.jpg">
-         <img class="img" src="img/pixels.jpeg">
-         <img class="img" src="img/die_legende.jpeg"><br>
-         <button id="button" class="btn btn-default" type="submit">More</button>
+         <a href="/movies"><img class="img" src="img/deadpool.jpg"></a>
+         <a href="/movies"><img class="img" src="img/pixels.jpeg"></a>
+         <a href="/movies"><img class="img" src="img/die_legende.jpeg"></a><br>
+         <a href="/movies"><button id="button" class="btn btn-default" type="submit">All Movies</button></a>
      </div>
-
      <div class="open-forum">
          <div class="titles">
              OPEN FORUM
@@ -52,11 +39,10 @@ ts value for section title to "Mini Twitter" (section content is used in message
          POSTS
      </div>
      <div class="posts">
-
          <div>
              <ul>
                  @foreach ($messages as $message)
-                 <li>
+                 <li class="posts-li">
                      <b>
                          <a href="/message/{{$message->id}}">{{$message->title}}</a>
                      </b><br>
@@ -66,8 +52,6 @@ ts value for section title to "Mini Twitter" (section content is used in message
                  @endforeach
              </ul>
              @endsection
-
-
          </div>
      </div>
 

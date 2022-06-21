@@ -1,8 +1,7 @@
  @extends('layouts.master')
 
 
- @section('content')<br>
-
+ @section('content')
  <!-- hier wird der Wert von der section "content" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
 
@@ -11,20 +10,15 @@
        LISTED MOVIES
     </div>
     <div class="movies">
-       <ul>
+       <ul class="movies-ul">
           @foreach ($movies as $movie)
-          <li>
-             <b>{{$movie->title}}:</b><br>
-             {{$movie->content}}<br>
+          <li class="movies-li">
+             <b>
+                {{$movie->title}}</a></b><br>
+             <br>
           </li>
           @endforeach
        </ul>
-
-       @endsection
-
-       <img>
-       </ul>
     </div>
  </div>
-
  @endsection
