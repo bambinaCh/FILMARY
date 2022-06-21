@@ -1,4 +1,6 @@
-FIGMA WIREFRAME: https://www.figma.com/file/3WL7as34TEw4kmBGkhMCWe/Untitled?node-id=0%3A1 DATA BASE: https://docs.google.com/spreadsheets/d/1eAIgMgzO7OdyFa3h0rHn3f9hE09DtOVpzezjgfEfLDQ/edit#gid=0
+FIGMA WIREFRAME: https://www.figma.com/file/3WL7as34TEw4kmBGkhMCWe/Untitled?node-id=0%3A1 
+DATA BASE: https://docs.google.com/spreadsheets/d/1eAIgMgzO7OdyFa3h0rHn3f9hE09DtOVpzezjgfEfLDQ/edit#gid=0
+TIGA CONTRACT: https://tree.taiga.io/project/bambina-filmary/wiki/team-contract
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
