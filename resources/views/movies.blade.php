@@ -14,8 +14,11 @@
           @foreach ($movies as $movie)
           <li class="movies-li">
              <b>
-                {{$movie->title}}</a></b><br>
-             <br>
+                {{$movie->cover}}</br>
+                <div class="movie-title">
+                   {{$movie->title}}
+                </div>
+             </b><br>
           </li>
           @endforeach
        </ul>
