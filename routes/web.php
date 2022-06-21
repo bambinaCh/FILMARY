@@ -23,5 +23,6 @@ Route::get('/', function () {
  Route::post('/create', [MessageController::class, 'create']);
  Route::get('/message/{id}', [MessageController::class, 'details']);
 
- Route::get('/movies', [MessageController::class, 'showAll']);
+ Route::get('/movies', [MessageController::class, 'showMovies']);
+ 
  Route::get('/movies/{id}', [MessageController::class, 'details']);

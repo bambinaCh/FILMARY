@@ -12,9 +12,16 @@ class MessageController extends Controller
     public function showAll()
     {
         $messages = Message::all()->sortByDesc('created_at');
+
+        return view('messages', ['messages' => $messages]);
+        
+    }
+
+    public function showMovies()
+    {
         $movies = Movie::all()->sortByDesc('created_at');
 
-        return view('messages', ['messages' => $messages, 'movies' => $movies]);
+        return view('movies', ['movies' => $movies]);
         
     }
 
